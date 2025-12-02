@@ -6,50 +6,72 @@
     <title>TeleCare Consult — Головна</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-home">
     <header class="site-header" id="top">
-        <div class="logo-block">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=120&q=60" alt="TeleCare Consult логотип" class="logo" />
+        <div class="brand-block">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=160&q=60" alt="TeleCare Consult логотип" class="logo" />
             <div>
                 <p class="tagline">TeleCare Consult</p>
                 <p class="subline">Онлайн консультації лікарів та психологів</p>
             </div>
         </div>
-        <nav class="main-nav">
-            <a href="#mission">Мета</a>
-            <a href="#history">Історія</a>
-            <a href="services.html">Послуги</a>
-            <a href="feedback.html">Зворотній зв'язок</a>
-            <a href="https://moz.gov.ua/" target="_blank" rel="noopener">МОЗ України</a>
-            <a href="https://www.who.int" target="_blank" rel="noopener">ВООЗ</a>
-        </nav>
+        <div class="header-actions">
+            <a class="btn secondary login-btn" href="https://telecare.ua/login" target="_blank" rel="noopener">Увійти</a>
+            <a class="btn primary register-btn" href="feedback.html#form">Зареєструватись</a>
+        </div>
     </header>
 
+    <nav class="main-nav">
+        <a href="#mission">Мета</a>
+        <a href="#history">Історія</a>
+        <a href="services.html">Послуги</a>
+        <a href="feedback.html">Зворотній зв'язок</a>
+        <a href="https://moz.gov.ua/" target="_blank" rel="noopener">МОЗ України</a>
+        <a href="https://www.who.int" target="_blank" rel="noopener">ВООЗ</a>
+    </nav>
+
+    <section class="hero-panel">
+        <div>
+            <h1>Дистанційні консультації, що підлаштовуються під клієнта</h1>
+            <p>TeleCare Consult поєднує медиків, психологів і дизайнерів підтримки, аби забезпечити коректне планування лікування, супровід та цифровий комфорт.</p>
+        </div>
+        <div class="hero-pill">
+            <p><strong>Персональні плани</strong> від лікарів ЄС та України, відео- та аудіо сесії у зашифрованих кімнатах.</p>
+        </div>
+    </section>
+
     <main>
-        <article id="mission">
+        <article id="mission" class="mission-card" data-section="goal">
             <header>
                 <h1>Мета онлайн консультацій</h1>
             </header>
             <section>
-                <p>
-                    <span>Наша команда прагне зробити турботу про психічне та фізичне здоров'я <i><b><em><u>доступною і безпечною</u></em></b></i></span> для людей будь-де.
-                </p>
-                <p>
-                    TeleCare Consult поєднує лікарів, психологів та дієтологів для швидких і глибоких консультацій.
-                </p>
+                <p class="mission-intro">
+                    <span>Наша команда прагне зробити турботу про психічне та фізичне здоров'я <i><b><em><u>доступною і безпечною</u></em></b></i></span> для людей будь-де.</p>
+                <p>Ми працюємо з медичними мережами України, Польщі та Португалії, щоб підготувати зрозумілі плани догляду, пояснення аналізів і дружні інтерфейси.</p>
+                <div class="mission-grid">
+                    <section>
+                        <h2>Що входить</h2>
+                        <ul>
+                            <li>Оцінка стану, відео та текстові рекомендації.</li>
+                            <li>Календар ліків, push-нагадування.</li>
+                            <li>Спільні кабінети для сімейних консультацій.</li>
+                        </ul>
+                    </section>
+                    <section class="mission-note">
+                        <h3>Переваги TeleCare</h3>
+                        <p>Команда дизайнерів та лікарів застосовує принципи гуманного UX: плавна типографіка, адаптивна сітка, чіткі CTA.</p>
+                    </section>
+                </div>
                 <ol>
                     <li>Забезпечити цілодобовий доступ до фахівців.</li>
                     <li>Надати персональні плани підтримки.</li>
                     <li>Гарантувати безпеку даних та прозорість взаємодії.</li>
                 </ol>
-                <div class="cta-group">
-                    <a class="btn primary" href="services.html">Перейти у власний кабінет</a>
-                    <a class="btn secondary" href="feedback.html#form">Зареєструватись</a>
-                </div>
             </section>
         </article>
 
-        <article id="history">
+        <article id="history" class="history-panel" data-section="team">
             <header>
                 <h2>Історія та керівники</h2>
             </header>
@@ -57,6 +79,16 @@
                 <p>
                     Від <a href="#mission">першої ідеї</a> до партнерств із <a href="#contacts">клініками-партнерами</a> ми зберігаємо фокус на якості та етичності.
                 </p>
+                <blockquote class="history-note">
+                    <strong>Підтримка пацієнтів</strong>
+                    <span>З 2018 року ми впроваджуємо супровід 24/7: чат, аудіо- та відеосесії, перекладач для клієнтів ЄС.</span>
+                </blockquote>
+                <div class="history-scroll" data-scroll="long-copy">
+                    <p>Команда TeleCare народилась у Львові як ініціатива лікарів-кардіологів, які прагнули цифрових візитів. Поступово додались психологи, дієтологи та дизайнери взаємодії.</p>
+                    <p>Сьогодні ми співпрацюємо з клініками у Варшаві та Лісабоні, застосовуючи принципи мінімалізму, гарної типографіки та швидких сценаріїв, описані у лекції №1.</p>
+                    <p>Для керівників створено прозорий профіль із досвідом та освітою, щоб партнери швидко розуміли рівень експертизи.</p>
+                </div>
+                <div class="history-table">
                 <table>
                     <caption>Довідка про TeleCare Consult</caption>
                     <thead>
@@ -108,22 +140,10 @@
                         </tr>
                     </tfoot>
                 </table>
+                </div>
             </section>
         </article>
     </main>
-
-    <aside class="updates">
-        <h3>Швидка навігація</h3>
-        <ul>
-            <li><a href="#mission">Про місію</a></li>
-            <li><a href="#history">Команда</a></li>
-            <li><a href="https://www.unicef.org/ukraine" target="_blank" rel="noopener">Партнери UNICEF</a></li>
-            <li><a href="services.html">Послуги</a></li>
-        </ul>
-        <p>
-            Наступний відкритий вебінар з ментального здоров'я відбудеться 12 грудня 2025 року.
-        </p>
-    </aside>
 
     <footer id="contacts">
         <div class="contact-block">

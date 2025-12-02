@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeleCare Consult — Зворотній зв'язок</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        .page-feedback .feedback-info cite {
+            color: #1c4d8c;
+        }
+    </style>
 </head>
-<body>
+<body class="page-feedback">
     <header class="site-header">
-        <div class="logo-block">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=120&q=60" alt="TeleCare Consult логотип" class="logo" />
+        <div class="brand-block">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=160&q=60" alt="TeleCare Consult логотип" class="logo" />
             <div>
                 <p class="tagline">TeleCare Consult</p>
                 <p class="subline">Форма зворотного зв'язку</p>
             </div>
         </div>
-        <nav class="main-nav">
-            <a href="index.html">Головна</a>
-            <a href="services.html">Послуги</a>
-        </nav>
     </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Головна</a>
+        <a href="services.html">Послуги</a>
+        <a href="#form">Форма</a>
+        <a href="https://www.who.int" target="_blank" rel="noopener">ВООЗ</a>
+    </nav>
 
     <main>
         <section>
             <h1>Ми відкриті до співпраці</h1>
             <p>Заповніть форму нижче та опишіть свій запит. Ми відповімо протягом одного робочого дня.</p>
+            <div class="feedback-layout">
             <form id="form" class="feedback-form">
-                <fieldset>
+                <fieldset class="personal-fields">
                     <legend>Персональна інформація</legend>
                     <label>
                         Прізвище та ім'я
@@ -42,7 +51,7 @@
                     </label>
                 </fieldset>
 
-                <label>
+                <label class="goal-field">
                     Мета зворотнього зв'язку
                     <select name="goal" required>
                         <option value="">Оберіть один варіант</option>
@@ -53,9 +62,9 @@
                     </select>
                 </label>
 
-                <label>
+                <label class="details-field">
                     Детально (до 500 символів)
-                    <textarea name="details" rows="5" maxlength="500" style="height: 160px; max-height: 200px; width: 100%; max-width: 640px;" required></textarea>
+                    <textarea name="details" rows="5" maxlength="500" required></textarea>
                 </label>
 
                 <label class="consent">
@@ -68,8 +77,18 @@
                     <button type="reset" class="btn secondary">Очистити</button>
                 </div>
             </form>
+            <aside class="feedback-info">
+                <h2>Як ми обробляємо звернення</h2>
+                <p>Команда підтримки TeleCare читає кожне повідомлення та повертається з відповіддю в межах одного робочого дня.</p>
+                <ul>
+                    <li>Пріоритезуємо термінові запити, пов'язані з безпекою користувачів.</li>
+                    <li>Передаємо консультації профільним лікарям або психологам.</li>
+                    <li>Зберігаємо історію листування у зашифрованому середовищі.</li>
+                </ul>
+            </aside>
+            </div>
             <div class="cta-group">
-                <a class="btn tertiary" href="index.html">На головну</a>
+                <a class="btn secondary" href="index.html">На головну</a>
             </div>
         </section>
     </main>

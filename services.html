@@ -6,72 +6,75 @@
     <title>TeleCare Consult — Послуги</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-services">
     <header class="site-header">
-        <div class="logo-block">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=120&q=60" alt="TeleCare Consult логотип" class="logo" />
+        <div class="brand-block">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=160&q=60" alt="TeleCare Consult логотип" class="logo" />
             <div>
                 <p class="tagline">TeleCare Consult</p>
                 <p class="subline">Каталог онлайн консультацій</p>
             </div>
         </div>
-        <nav class="main-nav">
-            <a href="index.html">Головна</a>
-            <a href="feedback.html">Зворотній зв'язок</a>
-        </nav>
     </header>
 
+    <nav class="main-nav">
+        <a href="index.html">Головна</a>
+        <a href="#services">Наші послуги</a>
+        <a href="feedback.html">Зворотній зв'язок</a>
+        <a href="https://moz.gov.ua/" target="_blank" rel="noopener">МОЗ України</a>
+    </nav>
+
     <main>
-        <section>
+        <section id="services">
             <h1>Наші послуги</h1>
             <p>Оберіть консультацію, яка відповідає вашому запиту. Ми підбираємо спеціалістів із підтвердженими сертифікаціями.</p>
             <ul class="service-list">
-                <li>
+                <li class="service-card" data-service="psychology">
                     <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=60" alt="Психологічна консультація" />
-                    <div>
+                    <div class="service-card-body">
                         <h2>Психологічна сесія</h2>
                         <p>50 хвилин розмовної терапії з техніками CBT.</p>
-                        <p class="price">1200 грн</p>
+                        <p class="price"><span class="price-label">Вартість послуги:</span> 1200 грн</p>
                     </div>
                 </li>
-                <li>
+                <li class="service-card" data-service="therapy">
                     <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=400&q=60" alt="Консультація терапевта" />
-                    <div>
+                    <div class="service-card-body">
                         <h2>Терапевт онлайн</h2>
                         <p>Оцінка симптомів, огляд аналізів та електронний рецепт.</p>
-                        <p class="price">900 грн</p>
+                        <p class="price"><span class="price-label">Вартість послуги:</span> 900 грн</p>
                     </div>
                 </li>
-                <li>
+                <li class="service-card" data-service="diet">
                     <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=400&q=60" alt="Дієтолог" />
-                    <div>
+                    <div class="service-card-body">
                         <h2>Дієтологічний план</h2>
                         <p>Персоналізоване меню та супровід у чаті.</p>
-                        <p class="price">1500 грн</p>
+                        <p class="price"><span class="price-label">Вартість послуги:</span> 1500 грн</p>
                     </div>
                 </li>
-                <li>
+                <li class="service-card" data-service="sleep">
                     <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=400&q=60" alt="Сомнолог" />
-                    <div>
+                    <div class="service-card-body">
                         <h2>Консультація сомнолога</h2>
                         <p>Покрокова діагностика та вправи для сну.</p>
-                        <p class="price">1100 грн</p>
+                        <p class="price"><span class="price-label">Вартість послуги:</span> 1100 грн</p>
                     </div>
                 </li>
-                <li>
+                <li class="service-card" data-service="family">
                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=60" alt="Сімейний консультант" />
-                    <div>
+                    <div class="service-card-body">
                         <h2>Сімейна сесія</h2>
                         <p>Спільна робота з парою або родиною.</p>
-                        <p class="price">1700 грн</p>
+                        <p class="price"><span class="price-label">Вартість послуги:</span> 1700 грн</p>
                     </div>
                 </li>
-                <li>
+                <li class="service-card" data-service="career">
                     <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&q=60" alt="Кар'єрний коуч" />
-                    <div>
+                    <div class="service-card-body">
                         <h2>Кар'єрний коучинг</h2>
                         <p>Тестування сильних сторін і план розвитку.</p>
-                        <p class="price">1300 грн</p>
+                        <p class="price"><span class="price-label">Вартість послуги:</span> 1300 грн</p>
                     </div>
                 </li>
             </ul>
