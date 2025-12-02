@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2a37;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main,
+header,
+footer,
+aside,
+article,
+section {
+    padding: 1rem;
+}
+
+.site-header {
+    background: linear-gradient(120deg, #1a73e8, #4e8fe3);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.subline {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+article,
+section {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(10, 31, 68, 0.08);
+}
+
+article header,
+section > h1,
+section > h2,
+section > h3 {
+    margin-top: 0;
+}
+
+.cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.btn.primary {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.btn.secondary {
+    background-color: #fff;
+    color: #1a73e8;
+    border-color: #1a73e8;
+}
+
+.btn.tertiary {
+    background-color: #f1f4f9;
+    color: #1f2a37;
+    border-color: #d7dcea;
+}
+
+ol {
+    padding-left: 1.25rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+caption {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 1px solid #d7dcea;
+    padding: 0.65rem;
+    text-align: left;
+}
+
+th {
+    background-color: #eef3fc;
+}
+
+tfoot td {
+    background-color: #f1f4f9;
+    font-style: italic;
+}
+
+.updates {
+    max-width: 1100px;
+    margin: 0 auto 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(10, 31, 68, 0.08);
+}
+
+.updates ul {
+    padding-left: 1.1rem;
+}
+
+footer {
+    background-color: #0f1c2e;
+    color: #d9e2f7;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.contact-block p {
+    margin: 0.25rem 0;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.service-list li {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 4px rgba(15, 35, 82, 0.08);
+}
+
+.service-list li img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.service-list li div {
+    padding: 1rem;
+}
+
+.price {
+    font-weight: 600;
+    color: #0f7b4c;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feedback-form fieldset {
+    border: 2px solid #d0d7ec;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.feedback-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-weight: 500;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    padding: 0.65rem;
+    border-radius: 8px;
+    border: 1px solid #c7d0e5;
+    font-size: 1rem;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.consent {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}

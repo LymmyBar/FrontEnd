@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleCare Consult — Зворотній зв'язок</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-block">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=120&q=60" alt="TeleCare Consult логотип" class="logo" />
+            <div>
+                <p class="tagline">TeleCare Consult</p>
+                <p class="subline">Форма зворотного зв'язку</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Головна</a>
+            <a href="services.html">Послуги</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Ми відкриті до співпраці</h1>
+            <p>Заповніть форму нижче та опишіть свій запит. Ми відповімо протягом одного робочого дня.</p>
+            <form id="form" class="feedback-form">
+                <fieldset>
+                    <legend>Персональна інформація</legend>
+                    <label>
+                        Прізвище та ім'я
+                        <input type="text" name="fullName" required />
+                    </label>
+                    <label>
+                        E-mail
+                        <input type="email" name="email" required />
+                    </label>
+                    <label>
+                        Вік
+                        <input type="number" name="age" min="10" max="120" required />
+                    </label>
+                </fieldset>
+
+                <label>
+                    Мета зворотнього зв'язку
+                    <select name="goal" required>
+                        <option value="">Оберіть один варіант</option>
+                        <option value="cooperation">Співпраця</option>
+                        <option value="complaint">Скарга на якість послуги</option>
+                        <option value="suggestion">Пропозиція</option>
+                        <option value="bug">Помилка на сайті</option>
+                    </select>
+                </label>
+
+                <label>
+                    Детально (до 500 символів)
+                    <textarea name="details" rows="5" maxlength="500" style="height: 160px; max-height: 200px; width: 100%; max-width: 640px;" required></textarea>
+                </label>
+
+                <label class="consent">
+                    <input type="checkbox" name="consent" required />
+                    Погоджуюсь на обробку персональних даних
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Надіслати</button>
+                    <button type="reset" class="btn secondary">Очистити</button>
+                </div>
+            </form>
+            <div class="cta-group">
+                <a class="btn tertiary" href="index.html">На головну</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 TeleCare Consult</p>
+    </footer>
+</body>
+</html>
