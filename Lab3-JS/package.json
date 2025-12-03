@@ -1,0 +1,9 @@
+{
+  "name": "lab3-js",
+  "version": "1.0.0",
+  "description": "Lab 3 JavaScript tasks (variant 8)",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}

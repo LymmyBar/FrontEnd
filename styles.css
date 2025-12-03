@@ -42,6 +42,7 @@ body.page-home main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding-inline: 1rem;
 }
 
 body.page-services main,
